@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HealthInd - Your AI Health Assistant</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">HealthInd</div>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/login">Login/Signup</a></li>
+                <li><a href="/medicines">Medicines</a></li>
+                <li><a href="/about">About</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="hero">
+            <h1>Health is the strength of our nation.</h1>
+            <p>- Let's Protect it.</p>
+        </div>
+        <div id="chat-container">
+            <div id="chat-box">
+                <div class="message bot-message">
+                    <p>नमस्ते! मैं HealthInd हूँ, आपका AI स्वास्थ्य सहायक। मैं आज आपकी क्या मदद कर सकता हूँ?</p>
+                </div>
+            </div>
+            <div id="input-container">
+                <input type="text" id="user-input" placeholder="Bolkar ya likhkar apna sawaal poochein...">
+                <button id="mic-btn">🎤</button>
+                <button id="send-btn">Send</button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 HealthInd. Designed & Developed by <a href="#">synexis</a>.</p>
+    </footer>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - HealthInd</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body class="auth-body">
+    <div class="auth-container">
+        <h2>HealthInd</h2>
+        <form class="auth-form">
+            <h3>Create Account</h3>
+            <input type="text" placeholder="Enter Your Name" required>
+            <input type="tel" placeholder="Enter Your Phone No." required>
+            <input type="email" placeholder="Enter Email" required>
+            <button type="submit">Sign Up</button>
+            <p>Already have an account? <a href="/login">Login</a></p>
+        </form>
+    </div>
+</body>
+</html>

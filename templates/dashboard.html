@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - HealthInd</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">HealthInd</div>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/medicines">Medicines</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="dashboard-container">
+            <h1>Welcome, Ashab!</h1>
+            <div class="grid-container">
+                <div class="card">
+                    <h3>Personal Details</h3>
+                    <p><strong>Name:</strong> MD Ashab Akhtar</p>
+                    <p><strong>Age:</strong> 21</p>
+                    <p><strong>Blood Group:</strong> B+</p>
+                </div>
+                <div class="card">
+                    <h3>Vitals (Sample)</h3>
+                    <p><strong>Blood Pressure:</strong> 120/80 mmHg</p>
+                    <p><strong>Blood Sugar:</strong> 95 mg/dL</p>
+                    <p><strong>Last Checkup:</strong> 15 Sep 2025</p>
+                </div>
+                <div class="card full-width">
+                    <h3>My Reports</h3>
+                    <ul>
+                        <li><a href="#">Blood Test Report - 15/09/2025</a></li>
+                        <li><a href="#">X-Ray Report - 02/06/2025</a></li>
+                    </ul>
+                    <button>Upload New Report</button>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

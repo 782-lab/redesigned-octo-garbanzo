@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medicine Information - HealthInd</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body class="medicine-page-body">
+    <header>
+        <nav>
+            <div class="logo">HealthInd</div>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/login">Login/Signup</a></li>
+                <li><a href="/medicines">Medicines</a></li>
+                <li><a href="/about">About</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="medicine-container">
+            <h2>Medicine Information Finder</h2>
+            <p>Enter the name of a medicine to get information, or upload an image of the medicine strip.</p>
+            <div class="search-area">
+                <div class="search-box">
+                    <input type="text" id="med-search-input" placeholder="Enter medicine name...">
+                    <button id="med-search-btn">Search</button>
+                    <button id="med-voice-btn">🎤</button>
+                </div>
+                <div class="upload-box">
+                    <label for="med-image-upload">Upload Image</label>
+                    <input type="file" id="med-image-upload" accept="image/*" style="display: none;">
+                </div>
+            </div>
+            <div class="results-area">
+                <h3>Results</h3>
+                <p id="med-results-placeholder">Search for a medicine to see details here.</p>
+            </div>
+        </div>
+    </main>
+    <script src="{{ url_for('static', filename='js/medicine.js') }}"></script>
+</body>
+</html>

@@ -1,2 +1,2 @@
 # smart india hackathon project 
-# its 
+here i created a website which aware about deases 
